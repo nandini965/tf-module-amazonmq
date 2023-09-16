@@ -38,6 +38,7 @@ resource "aws_security_group" "main" {
     vpc_security_group_ids = [aws_security_group.main.id]
 
     tags = merge(var.tags, { Name = "${var.name}-${var.env}" })
+  }
     root_block_device {
       encrypted  = true
       kms_key_id = var.kms_arn
@@ -46,5 +47,5 @@ resource "aws_security_group" "main" {
       }))
     }
 
-  }
+
 
