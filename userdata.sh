@@ -1,5 +1,7 @@
-#!/usr/bin/env bash
-cd/opt
-git clone "https://github.com/nandini965/tf-module-amazonmq.git"
+
+#!/bin/bash
+
+cd /opt
+git clone "https://github.com/nandini965/roboshop-shell"
 cd roboshop-shell
-bash rabbitmq.sh ${rabbitmq_app_user_password} &>>/opt/roboshop.log
+bash rabbitmq.sh ${rabbitmq_appuser_password} &>>/opt/roboshop.log
