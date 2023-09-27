@@ -1,4 +1,4 @@
-#!/bin/bash
+##!/bin/bash
 
 cd /opt
 git clone https://github.com/nandini965/roboshop-shell.git
